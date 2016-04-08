@@ -149,7 +149,7 @@ a:focus {
     box-sizing:         border-box;
 
     font-family: 'PT Serif', georgia, serif;
-    font-size: 48px;
+    font-size: 128px;
     line-height: 1.5;
 }
 
@@ -160,7 +160,7 @@ a:focus {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0.1;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -225,6 +225,7 @@ a:focus {
 
 #title {
     padding: 0;
+    font-size: 54px;
 }
 
 #title .try {
@@ -241,8 +242,6 @@ a:focus {
 }
 
 #title h1 {
-    font-size: 190px;
-
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
     -ms-transform:     translateZ(50px);
@@ -254,6 +253,29 @@ a:focus {
     font-size: 32px;
 }
 
+#title input, #shaky {
+	width: 900px;
+	position: absolute;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0);
+	font-size: 84px;
+	border: none;
+	color: rgba(0, 0, 0, 0);
+}
+
+#AngularJS {
+	margin-top: 250px;
+}
+
+#WordPress {
+	margin-top: 650px;
+}
+
+#shaky {
+	margin-top: -100px;
+	margin-left: -450px;
+}
+
 /*
     Second step is nothing special, just a text with a link, so it doesn't need
     any special styling.
@@ -261,7 +283,7 @@ a:focus {
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
 #big {
-    width: 600px;
+    width: 800px;
     text-align: center;
     font-size: 60px;
     line-height: 1;
@@ -282,14 +304,24 @@ a:focus {
     'Tiny ideas' just need some tiny styling.
 */
 #tiny {
-    width: 500px;
+    width: 1000px;
     text-align: center;
+    font-size: 7em;
+    font-weight: normal;
+}
+
+#tiny b {
+	font-size: 0.5em;
+	font-weight: bold;
 }
 
 /*
     This step has some animated text ...
 */
-#ing { width: 500px }
+#ing { 
+	width: 800px;
+	font-size: 7em;
+}
 
 /*
     ... so we define display to `inline-block` to enable transforms and
@@ -640,7 +672,25 @@ a:focus {
 
 @keyframes growth {
     0%   { transform: scale(1.0, 1.0); }
-    100% { transform: scale(2.0, 2.0); }
+    100% { transform: scale(1.4, 1.4); }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 #title h1 {
@@ -698,10 +748,6 @@ a:focus {
     opacity: 1;
 }
 
-.text-growth {
-	transform: scale(2.0, 2.0);
-}
-
 .lightorange {
 	color: rgb(255, 157, 81);
 }
@@ -739,4 +785,27 @@ a:focus {
 .storm {
 	color: rgb(224, 228, 204);
 	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+.big {
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay:    0.5s;
+    -ms-transition-delay:     0.5s;
+    -o-transition-delay:      0.5s;
+    transition-delay:         0.5s;
+
+    animation: growth 2s infinite alternate ease-in-out;
+
+    transition: all 2s ease-in-out;
+}
+
+.shaky {
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay:    0.5s;
+    -ms-transition-delay:     0.5s;
+    -o-transition-delay:      0.5s;
+    transition-delay:         0.5s;
+
+    animation: shake 0.82s infinite cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
 }
