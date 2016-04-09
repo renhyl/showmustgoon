@@ -304,9 +304,9 @@ a:focus {
     'Tiny ideas' just need some tiny styling.
 */
 #tiny {
-    width: 1000px;
+    width: 1500px;
     text-align: center;
-    font-size: 7em;
+    font-size: 54px;
     font-weight: normal;
 }
 
@@ -793,6 +793,21 @@ a:focus {
 
 #aboutme1 {
 	width: 	1700px;
+	font-size: 44px;
+}
+
+#credits {
+	width: 	1800px;
+	font-size: 34px;
+}
+
+#wptime {
+	width: 1800px;
+	font-size: 45px;
+}
+
+#wptime ul {
+	padding-left: 120px;
 }
 
 .lightorange {
