@@ -51,7 +51,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    <title>AngularJS & Wordpress by Damian Boni</title>
     
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
@@ -91,23 +91,67 @@
         <h1>
             <input id="AngularJS" type="text" ng-model="AngularJS">
             <input id="WordPress" type="text" ng-model="WordPress">
-            <span class="short storm">A leap of imagination into world of</span>
+            <span class="short storm">The Force Awakens</span>
             <span class="css coffee">{{AngularJS}}</span>
             <span class="transforms storm">&</span>
             <span class="d3 dust">{{WordPress}}</span>
         </h1>
         <span class="author">
-            by <a href="https://twitter.com/damian_boni">@Damian_Boni</a>
+            by <b class="coffee">Damian Boni</b>
         </span>
+    </div>
+
+    <div id="aboutme1" class="step" data-x="-1500" data-y="4100" data-rotate="180" data-scale="6">
+        <p class="bez">Web Developer with <b class="coffee">6+</b> years of <b ng-class="[myText]" class="coffee big">commercial</b> <span class="thoughts dust">experience</span></p>
     </div>
 
     <div id="whyAngular" class="step" data-x="1500" data-y="8100" data-rotate="180" data-scale="6">
         <p class="bez">Why AngularJS? <b ng-class="[myText]" class="coffee big">huge</b> <span class="thoughts dust">potential</span></p>
     </div>
 
+    <div id="frontend" class="step" data-x="9500" data-y="8100" data-rotate="380" data-scale="6">
+        <p class="bez">Electrify your Frontend<br> <b ng-class="[myText]" class="coffee big">HTML Playground</b><br> <span class="thoughts dust">DOM Kingdom</span></p>
+    </div>
+
     <div id="mvc" class="step" data-x="3200" data-y="6300" data-z="-100" data-rotate-x="-20" data-rotate-y="180" data-scale="4">
         <p class="bez">MVC <br><b ng-class="[myText]" class="coffee big">Model</b><br><span class="thoughts dust">View</span><br><span class="thoughts bez">Controller</span></p>
     </div>
+
+    <div id="ang1" class="step" data-x="11500" data-y="5100" data-rotate="80" data-scale="6">
+        <p class="bez">you can add <br> <b ng-class="[myText]" class="coffee big">directives</b><br> <span class="thoughts dust"><code>&lt;div <span class="bez">ng-controller="abc"</span>&gt;&lt;/div&gt;</code></span></p>
+    </div>
+
+    <div id="ag2" class="step" data-x="6200" data-y="6300" data-z="-100" data-rotate-x="-20" data-rotate-y="180" data-scale="4">
+        <p class="bez">
+            View & Templating
+            <br>
+            <code>
+                &lt;div ng-controller="myCtrl" ng-init="<b class="coffee">word='WordPress!'</b>"&gt;
+                <br>
+                    &lt;p>Hello { {word } }&lt;/p&gt;
+                <br>
+                &lt;/div&gt;
+            </code>
+        </p>
+    </div>
+
+    <div id="ag3" class="step" data-x="16200" data-y="6300" data-z="-100" data-rotate-x="-20" data-rotate-y="180" data-scale="4">
+        <p class="bez">
+            Logic in JavaScript
+            <br>
+            <code>
+                    <span>var</span> <span class="bluewp">app = angular.module(</span>'myApp'<span class="bluewp">, []);
+                    app.controller(</span>'myCtrl'<span class="bluewp">, <span class="coffee">function</span>(</span>$scope<span class="bluewp">) {</span>
+                        $scope<span class="bluewp">.word = </span>"WordPress!"<span class="bluewp">;<br>
+                    });</span>
+            </code>
+        </p>
+    </div>
+
+    <div id="link" class="step" data-x="-4500" data-y="8100" data-rotate="180" data-scale="6">
+        <p class="bez">Links together <b ng-class="[myText]" class="coffee big">Backend</b> & <span class="thoughts dust">Frontend</span></p>
+    </div>
+
 
     <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
         <input id="shaky" type="text" ng-model="myText" ng-init="myText='big'" value="">
@@ -115,32 +159,60 @@
     </div>
 
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b class="scaling">tiny</b> ideas</p>
+        <p>all this <b class="scaling">tiny</b> ideas</p>
     </div>
 
     <div id="ing" class="step" data-x="3500" data-y="-1850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning dust">positioning</b>, <b class="rotating bez">rotating</b> and <b class="scaling coffee">scaling</b> them on an infinite canvas</p>
+        <p>my <b class="positioning dust">experience</b>  <b class="rotating bez">frustrations</b> and <b class="scaling coffee">strugles</b> as a developer</p>
     </div>
 
-    <div id="imagination" class="step" data-x="7400" data-y="-800" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+    <div id="rest1" class="step" data-x="7400" data-y="-1800" data-rotate="100" data-scale="6">
+        Do <b class="coffee">REST</b> Share website's <b class="coffee">unique</b> functionality with the <b class="big storm">world</b>
     </div>
+
+    <div id="rest2" class="step" data-x="1400" data-y="-1800" data-rotate="100" data-rotate-x="-40" data-rotate-y="10" data-scale="6">
+        C<span class="coffee">reate</span>,<br>
+        R<span class="storm">ead</span>,<br>
+        U<span class="coffee">pdate</span>,<br>
+        D<span class="storm">elte</span>
+    </div>
+
+    <div id="rest3" class="step" data-x="2400" data-y="-4800" data-rotate="100" data-rotate-x="-80" data-rotate-y="10" data-scale="6">
+        <b class="bluewp">/wp-json/wp/v2/posts/1</b>
+    </div>
+
 
     <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
         <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
+        <q>use the source, Luke!</q>
     </div>
 
     <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
+        <p>one more thing yung padawan...</p>
     </div>
 
     <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
+        <p>
+                <span class="have">..notice </span> <span class="you">you must!..</span> <span class="noticed bez">.. JabbaScript</span> <span class="its storm">is like</span> <span class="in coffee">PHP</span>
+                <br>
+                not like <span class="have dust"> Han Solo..</span>
+        </p>
+        <span class="footnote">* it means JavaScript has many similarities with PHP</span>
     </div>
 
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <div id="qa" class="step" data-x="5400" data-y="12000" data-scale="6" ng-controller="EditTextController">
+        <h1>
+            <span class="storm">The Q&A </span>
+            <span class="css coffee">{{AngularJS}}</span>
+            <span class="transforms storm">&</span>
+            <span class="d3 dust">{{WordPress}}</span>
+        </h1>
+        <span class="author">
+            by <b class="coffee">Damian Boni</b>
+        </span>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="3500" data-scale="10">
     </div>
 
 </div>

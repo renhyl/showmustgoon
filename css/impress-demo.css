@@ -418,6 +418,10 @@ a:focus {
     font-size: 60px;
 }
 
+#source p {
+	font-size: 64px;
+}
+
 /*
     And the "it's in 3D" step again brings some 3D typography - just for fun.
 
@@ -426,6 +430,11 @@ a:focus {
     It is not needed by webkit browsers, but it is in Firefox. It's hard to say
     which behaviour is correct as 3D transforms spec is not very clear about it.
 */
+
+#its-in-3d {
+		width: 	1600px;
+}
+
 #its-in-3d p {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style:    preserve-3d; /* Y U need this Firefox?! */
@@ -693,7 +702,11 @@ a:focus {
   }
 }
 
-#title h1 {
+#title, #qa {
+	margin-top: -50px;
+}
+
+#title h1, #qa h1 {
     font-weight: bold;
     text-align: center;
     font-size: 5em;
@@ -707,7 +720,7 @@ a:focus {
     transition: all 2s ease-in-out;
 }
 
-#title h1 .short {
+#title h1 .short, #qa h1 .short {
     text-transform: lowercase;
     display: inline-block;
     font-weight: normal;
@@ -715,17 +728,17 @@ a:focus {
     transform: translateZ(-50px);
 }
 
-#title h1 .css, #title h1 .d3 {
+#title h1 .css, #title h1 .d3, #qa h1 .css, #qa h1 .d3 {
     display: inline-block;
     transform: translateY(-0.4em) translateZ(50px);
     font-size: 0.6em;
 }
 
-#title h1 .d3 {
+#title h1 .d3, #qa h1 .d3 {
 	transform: translateY(-1.8em) translateZ(50px);
 }
 
-#title h1 .transforms {
+#title h1 .transforms, #qa h1 .transforms {
     display: inline-block;
     font-weight: normal;
     font-size: 0.6em;
@@ -733,7 +746,7 @@ a:focus {
     transform: translateY(-1.1em) translateZ(50px);
 }
 
-#title .author {
+#title .author, #qa .author {
     display: block;
     width: 800px;
     margin: -170px auto 0;
@@ -744,8 +757,42 @@ a:focus {
     transition: opacity 1s;
 }
 
-#title.active .author {
+#title.active .author, #qa.active .author {
     opacity: 1;
+}
+
+#qa {
+	width: 	1500px;
+	font-size: 44px;
+}
+
+#qa .author {
+	margin-top: -70px;
+}
+
+#frontend {
+	width: 	1500px;
+}
+
+#link {
+	width: 	1400px;
+}
+
+#ang1, #ag2, #ag3 {
+	width: 	1600px;
+}
+
+#rest1 {
+	width: 	1000px;
+}
+
+#rest3 {
+	width: 	1400px;
+	font-size: 84px;
+}
+
+#aboutme1 {
+	width: 	1700px;
 }
 
 .lightorange {
@@ -808,4 +855,9 @@ a:focus {
 
     animation: shake 0.82s infinite cubic-bezier(.36,.07,.19,.97) both;
 	transform: translate3d(0, 0, 0);
+}
+
+
+code {
+	font-size: 74px;
 }
