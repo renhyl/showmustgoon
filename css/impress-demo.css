@@ -225,7 +225,7 @@ a:focus {
 
 #title {
     padding: 0;
-    font-size: 54px;
+    font-size: 44px;
 }
 
 #title .try {
@@ -320,7 +320,7 @@ a:focus {
 */
 #ing { 
 	width: 800px;
-	font-size: 7em;
+	font-size: 95px;
 }
 
 /*
@@ -432,7 +432,8 @@ a:focus {
 */
 
 #its-in-3d {
-		width: 	1600px;
+		width: 	1200px;
+		font-size: 75px;
 }
 
 #its-in-3d p {
@@ -702,8 +703,12 @@ a:focus {
   }
 }
 
-#title, #qa {
+#title {
 	margin-top: -50px;
+}
+
+#qa {
+	margin-top: 640px;
 }
 
 #title h1, #qa h1 {
@@ -771,7 +776,7 @@ a:focus {
 }
 
 #frontend {
-	width: 	1500px;
+	width: 	1200px;
 }
 
 #link {
@@ -779,11 +784,16 @@ a:focus {
 }
 
 #ang1, #ag2, #ag3 {
-	width: 	1600px;
+	width: 	1200px;
+}
+
+#ag3 {
+	font-size: 45px;
 }
 
 #rest1 {
-	width: 	1500px;
+	width: 	1200px;
+	font-size: 85px;
 }
 
 #rest3 {
@@ -792,18 +802,18 @@ a:focus {
 }
 
 #aboutme1 {
-	width: 	1700px;
+	width: 	1200px;
 	font-size: 44px;
 }
 
 #credits {
-	width: 	1800px;
-	font-size: 34px;
+	width: 	1200px;
+	font-size: 42px;
 }
 
 #wptime {
-	width: 1800px;
-	font-size: 45px;
+	width: 1200px;
+	font-size: 35px;
 }
 
 #wptime ul {
